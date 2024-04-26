@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="Description" content="Enter your description here" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
-    />
+    /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -34,8 +34,8 @@
         <ul>
           <li><a href="#main">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#service">Services</a></li>
-          <li><a href="#work">My Work</a></li>
+          <li><a href="#services">Work</a></li>
+          <li><a href="#portfolio">My Self</a></li>
           <li><a href="#contact">Contact Me</a></li>
         </ul>
         <i id="bar" class="fa-solid fa-bars"></i>
@@ -48,151 +48,279 @@
           <h3>Hello I am</h3>
           <h1>Shraddha <span>Davang</span></h1>
           <p>.Net Core Full Stack Developer</p>
-          <button id="cvBtn">Download CV</button>
+          <!-- <button id="cvBtn">Download CV</button> -->
+          <a href="/Inventory/Cv_Shraddha_Davang.pdf" download class="btn cvBtn">Download CV</a>
         </div>
-        <img src="/shruuu.jpg" />
+        <img height="500px" style="border-radius: 5px;" width="400px" src="/ORIGINAL/shruuu1.png" />
       </div>
 
       <!-- --------------------------- ABOUT ME ------------------------ -->
 
-      <div class="aboutus" id="about">
-        <div class="head">
-          <h1>About <span>Me</span></h1>
-        </div>
-        <div class="about">
-          <img src="/shruuu.jpg" />
-          <div class="aboutText">
-            <h2>Hello I am <span>.Net Core Full Stack Developer</span></h2>
-            <p>Experience : <span>2 Years</span></p>
-            <p>Speciality : <span>Website Development</span></p>
-            <p>
-              Skills :
-              <span>.NET Core (MVC | WEB API) + Angular + GIT + DevOPS</span>
-            </p>
-            <p>Email : <span>akshaydaundkar2000@gmail.com</span></p>
+
+
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="/ORIGINAL/shruuu5.png" />
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About <span class="clr">Me</span></h1>
+              <p>
+                Greetings! I'm your go-to .NET Core Full Stack Engineer, with over
+                2 years of experience crafting dynamic websites and mobile
+                applications. Proficient in <b>SQL, C#, LINQ, ASP.NET Core MVC</b>, and
+                more, I bring a wealth of technical prowess to the table. My
+                toolkit extends to  <b>Angular, HTML, CSS,
+                  JavaScript</b>, and more, ensuring your projects not only function
+                seamlessly but also boast a polished user interface. Behind the
+                scenes, I adhere to top-tier design patterns, expertly utilize
+                <b>GIT, and uphold SOLID principles</b>. Testing is a cornerstone of my
+                approach, employing nUnit to ensure robust performance. In the
+                agile world, I navigate projects with ease, adapting to changing
+                requirements.
+              </p>
+  
+              <div class="tab-titles">
+                <div class="tab-links active-link" onclick="openTab('skill')">
+                  Skill
+                </div>
+                <div class="tab-links" onclick="openTab('experience')">
+                  Experience
+                </div>
+                <div class="tab-links" onclick="openTab('education')">
+                  Education
+                </div>
+              </div>
+
+              <div class="tab-contents active-tab" id="skill">
+                <ul>
+                  <li>
+                    <span>UI/UX</span><br />
+                    Designing Web/App Interfaces
+                  </li>
+  
+                  <li>
+                    <span>Web Development</span><br />
+                    Web App Development
+                  </li>
+  
+                  <li>
+                    <span>App Development</span><br />
+                    Building Android/iOS Apps
+                  </li>
+                </ul>
+              </div>
+  
+  
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>Oct-2023 to Present</span><br />
+                    Software Engineer at <strong>Sagitec Solutions PVT. LTD.</strong>
+                  </li>
+  
+                  <li>
+                    <span>June-2022 to Oct-2023</span><br />
+                    Software Engineer at
+                    <strong>Globeminds Technology PVT. LTD.</strong>
+                  </li>
+  
+                  <!-- <li>
+                    <span>Sep-2021 to June-2022</span><br />
+                    Software Trainee at
+                    <strong>VHaash Technologies PVT. LTD.</strong>
+                  </li> -->
+                </ul>
+              </div>
+  
+              <div class="tab-contents" id="education">
+                <ul>
+  
+                  <li>
+                    <span>2022</span><br />
+                    BSc at
+                    <strong>Vivekanand College, Shivaji University, Kolhapur</strong>
+                  </li>
+  
+                  <li>
+                    <span>2019</span><br />
+                    HSC at <strong>Maharashtra Board</strong>
+                  </li>
+  
+                  <li>
+                    <span>2017</span><br />
+                    SSC at <strong>Maharashtra Board</strong>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- --------------------------- SERVICES ------------------------ -->
 
-      <div class="services" id="service">
-        <div class="head">
-          <h1>My <span>Services</span></h1>
-        </div>
-        <div class="service">
-          <div class="card">
-            <i class="fa-solid fa-code"></i>
-            <h3>Web Development</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Reiciendis, sapiente.
-            </p>
-          </div>
 
-          <div class="card">
-            <i class="fa-solid fa-code"></i>
-            <h3>Website Design</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Reiciendis, sapiente.
-            </p>
-          </div>
-
-          <div class="card">
-            <i class="fa-solid fa-code"></i>
-            <h3>App Development</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Reiciendis, sapiente.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- --------------------------- WORKS ------------------------ -->
-
-      <div class="works" id="work">
-        <div class="head">
-          <h1>My <span>Works</span></h1>
-        </div>
-        <div class="myWork">
-          <div class="workCard">
-            <img src="/content_creation.png" alt="" />
-            <p>Content Creation</p>
-            <a
-              href="https://www.linkedin.com/posts/akshay-daundkar_sql-sqlserver-sqldeveloper-activity-7135298733511966720-ajod?utm_source=share&utm_medium=member_desktop"
-              target="_blank"
-              >Checkout</a
-            >
-          </div>
-
-          <div class="workCard">
-            <img src="/sql_database.jpg" alt="" />
-            <p>SQL Development</p>
-            <a
-              href="https://www.linkedin.com/posts/akshay-daundkar_sqlmadesimple-databasebasics-techexplainedeasily-activity-7134203152907534336-Rq6D?utm_source=share&utm_medium=member_desktop"
-              target="_blank"
-              >Checkout</a
-            >
-          </div>
-
-          <div class="workCard">
-            <img src="/responsive.jpg" alt="" />
-            <p>Responsive Portfolio</p>
-            <a
-              href="https://www.linkedin.com/posts/akshay-daundkar_webdevelopment-portfolio-html-activity-7130568308923260929-3RfD?utm_source=share&utm_medium=member_desktop"
-              target="_blank"
-              >Checkout</a
-            >
+      <div id="services">
+        <div class="container">
+          <h1 class="sub-title">My <span class="clr">Work</span></h1>
+          <div class="services-list">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>Web Design</h2>
+              <p>
+                Crafting visually stunning and functional websites is my
+                expertise. Specializing in .NET Core and Angular, I
+                deliver responsive designs, seamless user experiences, and robust
+                functionality for your web projects.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+  
+            <div>
+              <i class="fa-solid fa-crop-simple"></i>
+              <h2>UI/UX Design</h2>
+              <p>
+                Elevating user experiences through intuitive UI/UX design is my
+                forte. Leveraging design thinking and creativity, I ensure
+                visually appealing interfaces that captivate users, enhancing
+                overall satisfaction and engagement.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+  
+            <div>
+              <i class="fa-brands fa-app-store"></i>
+              <h2>App Design</h2>
+              <p>
+                Mastering the art of app development, I specialize in creating
+                seamless and feature-rich applications. With expertise in React
+                Native and native development, I bring your ideas to life,
+                ensuring a smooth and engaging user experience across platforms.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
           </div>
         </div>
       </div>
+  
+      <!-- ------------------ Portfolio ------------------ -->
+  
+      <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My <span class="clr">Self</span></h1>
+  
+          <div class="work-list">
+            <div class="work">
+              <img src="/ORIGINAL/shruuu6.png" />
+              <div class="layer">
+                <h1 style="margin-bottom: 10px; color: rgb(30, 208, 217);">STRONG</h1>
+                <!-- <p>
+                  Transforming ideas into dynamic social media solutions is my
+                  forte. Leveraging .NET Core and React Native, I craft engaging
+                  platforms. From feature-rich applications to seamless user
+                  experiences, my work in social media development is driven by
+                  innovation and user-centric design.
+                </p> -->
+                <!-- <a href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a> -->
+                <img height="400px" style="margin-top: 5px;" src="/ORIGINAL/shruuu2.png"/>
+              </div>
+            </div>
+  
+            <div class="work">
+              <img src="/ORIGINAL/shruuu3.png" />
+              <div class="layer">
+                <h1 style="margin-bottom: 10px; color: rgb(30, 208, 217);">INDEPENDENT</h1>
+                <!-- <h3>INDEPENDENT</h3> -->
+                <!-- <p>
+                  Harmonizing technology and creativity, my music app development
+                  revolves around .NET Core and React Native. Crafting immersive
+                  interfaces and seamless functionalities, I bring your musical
+                  vision to life, ensuring an enriching experience for users
+                  passionate about their tunes.
+                </p> -->
+                <!-- <a href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a> -->
+                <img height="400px" style="margin-top: 5px;" src="/ORIGINAL/shruuu4.png"/>
+              </div>
+            </div>
+  
+            <div class="work">
+              <img src="/ORIGINAL/shruuu7.png" />
+              <div class="layer">
+                <h1 style="margin-bottom: 10px; color: rgb(30, 208, 217);">PERFECT</h1>
+                <!-- <h3>PERFECT</h3> -->
+                <!-- <p>
+                  In the realm of e-commerce, I specialize in crafting robust
+                  websites using .NET Core and React. My solutions seamlessly
+                  integrate user-friendly interfaces with secure transactions,
+                  providing a tailored shopping experience that boosts engagement
+                  and drives business growth.
+                </p>
+                <a href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a> -->
 
-      <!-- --------------------------- CONTACT ME ------------------------ -->
-
-      <div class="connect" id="contact">
-        <div class="head">
-          <h1>Contact <span>Me</span></h1>
-        </div>
-        <div class="contact">
-          <form id="messageForm">
-            <p>Email :</p>
-            <input type="text" placeholder="Enter Email" id="email" />
-
-            <p>Message :</p>
-            <input type="text" placeholder="Enter Message" id="msg" />
-
-            <button id="cvBtn" type="submit">Submit</button>
-          </form>
+                <img height="400px" style="margin-top: 5px;" src="/ORIGINAL/shruuu7.png"/>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn">See More</a>
         </div>
       </div>
 
-      <!-- --------------------------- FOOTER ------------------------ -->
+       <!-- ------------------ Contact ------------------ -->
 
-      <div class="footer" id="footer">
-        <div class="text">
-          <h3>Connect Here</h3>
-          <p>LinkedIn</p>
-          <p>Instagram</p>
-          <p>Twitter</p>
-          <p>YouTube</p>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact <span class="clr">Me</span></h1>
+            <p id="txtEmail">
+              <i class="fa-solid fa-paper-plane" id="iconMail"></i
+              ><span >shraddhadavang@gmail.com</span>
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.linkedin.com/in/shraddha-davang-21b064261/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/_shraddha.05__/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea rows="6" placeholder="Your Message" name="Message">
+              </textarea>
+              <button class="btn btn2" type="submit">Submit</button>
+            </form>
+          </div>
         </div>
-        <div class="text">
-          <h3>Contact</h3>
-          <p>Email</p>
-          <p>Phone</p>
-          <p>Message</p>
-          <p>123-123-123</p>
-        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © <span style="color: rgb(30, 208, 217)">Shruuu</span>.
+          Made with <i class="fa-solid fa-heart"></i> by
+          <span style="color: rgb(30, 208, 217)">Shraddha Davang</span>.
+        </p>
       </div>
     </div>
+
 
   
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="/index.js"></script>
   </body>
 </html>
